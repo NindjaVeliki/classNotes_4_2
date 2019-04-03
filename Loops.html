@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loops</title>
+    <script>
+        function testWhile() {
+            var i = 0;
+            while (i < 10) {
+                alert("i= " + i);
+                i+=2;
+            }
+        }
+        function test_do_While() {
+            var x = 10;
+            do {
+                alert(x);
+                x++;
+                } 
+                while(x<10);
+        }
+        function testFor(){
+            for(x=0; x<10; x++){
+                alert(x);
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <button onclick="testWhile();">testWhile</button>
+    <br><br>
+    <button onclick="test_do_While();">test_do_While</button>
+    <br><br>
+    <button onclick="testFor();">testFor</button>
+</body>
+
+</html>

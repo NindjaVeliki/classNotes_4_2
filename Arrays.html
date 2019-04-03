@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="Arrays_1.js" ></script>
+
+    <script>
+    function numArray(){
+        var numbers=[10,8,4,6,2];
+        for(var i=0; i<numbers.length; i++){
+            alert(numbers[i]);
+        }
+    }
+    function names(){
+        var names=["John", "Mary", "Ajay", "Neo", "Trinity"];
+        for(var i=0; i<names.length; i++){
+            alert (names[i]);
+        }
+    }
+    function numbers(){
+        var numbers=[[1,2,3,4],[5,6,7],[8,9,10,11,12]];
+        for(var i=0; i<numbers.length;i++){
+            for(var j=0; j<numbers[i].length; j++){
+                alert(numbers[i][j]);
+            }
+        }
+    }
+    
+    </script>
+</head>
+<body>
+    <button onclick="numArray();">Array1</button><br><br>
+    <button onclick="names();">names</button><br><br>
+    <button onclick="numbers();">Array2</button><br><br>
+    <button onclick="people();">People Array</button><br><br>
+    <br><br>
+    <label>First Name</label><input type="text" id="fname"/><br>
+    <label>Last Name</label><input type="text" id="lname"/>
+    <button onclick="addPersonToArray();">Add person</button>
+    <button onclick="showAll();">ShowAllPeople</button>
+
+
+</body>
+</html>
